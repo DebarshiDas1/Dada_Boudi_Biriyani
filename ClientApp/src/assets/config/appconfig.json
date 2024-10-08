@@ -1,0 +1,24 @@
+{
+    "environment": {
+        "name": "Local",
+        "production": false
+    },
+    "appInsights": {
+        "instrumentationKey": ""
+    },
+    "logging": {
+        "console": true,
+        "appInsights": false
+    },
+    "api": {
+        "url": "https://dadaboudsbiriapi.azurewebsites.net"
+    },
+    "app": {
+        "title": "Dada Boudi Biriyani"
+    },
+    "buildInfo": {
+        "number": "1.0.0.0",
+        "createdOn": "Tuesday, October 08, 2024 11:43:07 AM"
+    },
+    "environments": []
+}

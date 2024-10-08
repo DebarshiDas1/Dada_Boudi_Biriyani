@@ -1,0 +1,203 @@
+@import '../../helpers/variables';
+
+:root {
+    --kendo-color-primary-on-surface: var(--primary-color-light);
+    --kendo-color-primary: var(--primary-color);
+    --kendo-color-primary-hover: var(--primary-hover-color);
+    --kendo-color-primary-active: var(--primary-color);
+}
+
+.k-floating-label {
+    color: var(--primary-label-color) !important;
+    font-weight: normal;
+    font-size: 14px !important;
+}
+
+.k-label {
+    color: var(--primary-label-color) !important;
+}
+
+.k-floating-label-container {
+    padding-top: 10px;
+    min-height: 50px;
+    background-color: var(--default-card-bg);
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 5px;
+}
+
+.k-form-field {
+    margin-bottom: 15px !important;
+}
+
+.k-floating-label-container .k-upload,
+.k-input-solid,
+.k-input-solid:hover,
+.k-picker-solid,
+.k-picker-solid:hover,
+.k-button-solid-base,
+.k-input-solid:focus-within {
+    background-color: var(--default-card-bg);
+    border-color: transparent !important;
+    box-shadow: none !important;
+    margin-top: 3px;
+}
+
+.k-floating-label {
+    transform: translateY(-54%) scale(1) !important;
+}
+
+.k-floating-label-container:not(.k-empty)>.k-floating-label,
+.k-floating-label-container.k-focus>.k-floating-label {
+    transform: translateY(0%) scale(0.82) !important;
+    margin-left: 9px;
+}
+
+.codezen-section-container {
+    margin: 0px 0px 15px 0px;
+    border: 1px solid var(--primary-border-color);
+    background-color: var(--default-card-bg);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-3);
+    padding: 15px 20px;
+}
+
+.codezen-section-title {
+    padding: 0px;
+    line-height: 1.2;
+    position: relative;
+    font-size: 0.975rem;
+    font-weight: 500;
+    color: var(--primary-header-color);
+    margin-bottom: 15px;
+}
+
+.codezen-tab {
+    .k-tabstrip-items {
+        .k-tabstrip-item.k-active {
+            background-color: transparent;
+        }
+    }
+
+    .k-tabstrip-content {
+        padding: 16px 16px 0 !important;
+        background-color: var(--default-card-bg);
+        border-color: var(--secondary-border-color);
+    }
+
+    .k-tabstrip-items-wrapper {
+        border-color: var(--secondary-border-color);
+    }
+}
+
+.codezen-renderer-container .icon-field {
+    padding-top: 4px;
+    min-height: 50px;
+    background-color: var(--default-card-bg);
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 5px;
+
+    .label-icon {
+        width: 20px;
+        color: var(--primary-label-color);
+    }
+
+    .k-checkbox-wrap {
+        margin: auto 0;
+    }
+}
+
+.label-icon.codezen-required-asterisk {
+    border-left: none !important;
+
+    &::after {
+        right: -5px;
+    }
+}
+
+.codezen-checkbox-container {
+    display: grid !important;
+    grid-template-columns: 20px 1fr;
+    min-height: 50px;
+    border: 1px solid var(--secondary-border-color);
+    border-radius: 5px;
+    padding: 0px 7px;
+    margin-top: 0 !important;
+    margin-bottom: 15px;
+
+    .k-checkbox-wrap {
+        margin: auto;
+    }
+
+    .k-checkbox-label {
+        margin: auto 5px;
+    }
+}
+
+.k-floating-label-container .k-upload {
+    .k-upload-dropzone {
+        background-color: transparent;
+
+        .k-upload-button-wrap {
+            .k-upload-button {
+                border-color: var(--primary-border-color) !important;
+                color: var(--color-3);
+                background-color: var(--bg-color-4);
+
+                .k-button-text {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .k-dropzone-hint,
+        .k-upload-status {
+            color: var(--primary-label-color);
+            font-size: 11px;
+        }
+    }
+
+    .k-upload-files {
+        .k-file-info {
+            .k-file-name {
+                color: var(--color-3);
+                line-height: 25px;
+            }
+
+            .k-file-summary {
+                color: var(--primary-label-color);
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+.codezen-required-asterisk {
+    border-left: 2px solid $primary-error !important;
+    transition: border-left-color 0.3s ease;
+}
+
+.lookup-view-template-container {
+
+    .codezen-renderer-container .row>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .codezen-preview-input-content {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.k-selected .lookup-view-template-container {
+
+    .codezen-preview-input-content {
+        background-color: transparent;
+
+        h6,
+        p {
+            color: var(--primary-color);
+        }
+    }
+}
