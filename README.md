@@ -1,3 +1,3 @@
-#Testing purpose only
+#Testing Purpose Only
 
 This is the Introduction content.
